@@ -1,5 +1,5 @@
 <?php
-    class Aldeano {
+    class Aldeano implements Recolectar{
         private $velocidadRecoleccion;
         function __construct($velocidadRecoleccion= 18){
             $this->velocidadRecoleccion = $velocidadRecoleccion;
@@ -10,7 +10,7 @@
         }
     }
 
-    class Arbusto {
+    class Arbusto implements Recolectable {
         private $cantidadAlimento;
         public function __construct($cantidadAlimento= 125) {
             $this->cantidadAlimento = $cantidadAlimento;
@@ -25,7 +25,7 @@ $aldeano = new Aldeano();
 $arbusto = new Arbusto();
 $aldeano->Recolectar($arbusto);
 
-    class Pesquero {
+    class Pesquero implements Recolectar{
         private $velocidadRecoleccion;
         function __construct($velocidadRecoleccion= 18){
             $this->velocidadRecoleccion = $velocidadRecoleccion;
@@ -35,7 +35,7 @@ $aldeano->Recolectar($arbusto);
             echo '<br>Se ha tardado ' .$tiempo. ' en Recolectar todo el alimento';
         }
     }
-    class BancoDePesca {
+    class BancoDePesca implements Recolectable {
         private $cantidadAlimento;
         public function __construct($cantidadAlimento= 225) {
             $this->cantidadAlimento = $cantidadAlimento;
