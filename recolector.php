@@ -1,5 +1,5 @@
 <?php
-    interface Recolectar{
-        function recolectar(Recolectable $recolectable);
+   interface Recolector {
+    public function recolectar(Recolectable $recolectable);
     }
 ?>

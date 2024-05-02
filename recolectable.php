@@ -1,5 +1,5 @@
 <?php
-    interface Recolectable{
-        function getAlimento(): int;
-    }
+   interface Recolectable {
+    public function getAlimento();
+}
 ?>
