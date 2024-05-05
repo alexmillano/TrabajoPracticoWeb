@@ -3,3 +3,27 @@
     text-align: center;
     color: aqua;
 }
+
+.footer{
+    background-color: black;
+    text-align: center;
+    color: aqua;
+}
+
+.fondo{
+    background-color:rgb(235, 221, 204);
+}
+
+.recolector{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.imagen {
+    margin-right: 20px;
+}
+
+.texto {
+    flex-grow: 1;
+}
