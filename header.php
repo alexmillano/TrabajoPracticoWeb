@@ -8,5 +8,5 @@
 </head>
 <body class="fondo">
     <header>
-        <h1 class="Efecto">Aldeanos y pescador</h1>
+        <h1 class="Efecto">Aldeano y pescador</h1>
     </header>

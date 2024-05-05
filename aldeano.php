@@ -27,11 +27,13 @@ class Aldeano implements Recolector {
 
     public function recolectar(Recolectable $recolectable) {
         $tiempo = ceil($recolectable->getAlimento() / $this->velocidadRecoleccion);
-        echo 'Tarda ' . $tiempo . ' minutos en recolectar todo el alimento';
+        echo 'El Aldeano es una unidad civil en Age of Empires que puede ser entrenada en la Plaza Central. Los Aldeanos son el soporte de cada civilización. Su propósito es construir edificios y recolectar recursos. Por mas indispensables que sean, sus habilidades de combate son inútiles.';
+        echo '<br>Tarda ' . $tiempo . ' minutos en recolectar todo el alimento';
     }
     public function getImagen() {
         return $this->imagen;
     }
+
 }
 $aldeano = new Aldeano();
 $arbusto = new Arbusto();
@@ -47,6 +49,7 @@ class Pesquero implements Recolector {
 
     public function recolectar(Recolectable $recolectable) {
         $tiempo = ceil($recolectable->getAlimento() / $this->velocidadRecoleccion);
+        echo 'El Barco Pesquero o Pesquero es una unidad naval que aparece en Age of Empires II: The Age of Kings. Esta unidad creada en el Muelle recoge los alimentos de los peces y puede construir Trampa para peces, que son como granjas acuáticas. Tardan en construirse, pero aportan más alimento.';
         echo '<br>Tarda ' . $tiempo . ' minutos en recolectar todo el alimento';
     }
 
