@@ -77,7 +77,7 @@ $aldeanos = array($aldeano, $pesquero);
 function MostrarRecolector($recolector){
     echo '<div class="recolector">';
     echo '<div class="imagen">';
-    echo '<img src="imagen/' . $recolector->getImagen() . '" height="300px" alt="Recolector">';
+    echo '<img src="imagen/' . $recolector->getImagen() . '" height="300px" alt="Personaje">';
     echo '</div>';
     echo '<div class="texto">';
     if ($recolector instanceof Aldeano) {
