@@ -92,6 +92,10 @@ function MostrarRecolector($recolector){
 foreach ($aldeanos as $recolector) {
     MostrarRecolector($recolector);
 }
+?>
 
+<a href="index.php">Volver</a>
+
+<?php
 require_once('footer.php');
 ?>
